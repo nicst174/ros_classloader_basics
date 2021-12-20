@@ -8,14 +8,14 @@ find_package(   catkin REQUIRED COMPONENTS
                 message_generation
                 class_loader
                 ## Impoted ROS-Pkg with exported librarys
-                ros_Classloader_Test
+                bilderpkg
     )
 
 catkin_package(
     INCLUDE_DIRS include
     LIBRARIES classloader_ext_test
     ##create dependency to the package
-    CATKIN_DEPENDS std_msgs roscpp message_runtime ros_Classloader_Test
+    CATKIN_DEPENDS std_msgs roscpp message_runtime bilderpkg
     DEPENDS system_lib
 )
 
