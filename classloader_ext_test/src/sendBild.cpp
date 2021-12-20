@@ -1,4 +1,4 @@
-#include "ros_Classloader_Test/Bild.h"                                          //Imported Interface for the Plugin
+#include "bilderpkg/Bild.h"                                          //Imported Interface for the Plugin
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include <boost/smart_ptr/shared_ptr.hpp>
@@ -16,7 +16,7 @@ int main(int argc, char **argv){
     ros::Rate loop_rate(10);
     int count = 0;
     //CLASSLOADER init
-    class_loader::ClassLoader loader("libros_Classloader_Test.so");             //load shared library in folder ${WORKSPACE_FOLDER}/devel/lib
+    class_loader::ClassLoader loader("libbilderpkg.so");             //load shared library in folder ${WORKSPACE_FOLDER}/devel/lib
     //loader.loadLibrary();
     std::vector<std::string> classes = loader.getAvailableClasses<Bild>();      // create a list of available/loaded classes
     int i = classes.size();
