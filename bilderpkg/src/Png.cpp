@@ -1,4 +1,4 @@
-#include "ros_Classloader_Test/Png.h"
+#include "bilderpkg/Png.h"
 #include <sstream>
 
 //IMPORTANT: include classloader header for the pragma-function
