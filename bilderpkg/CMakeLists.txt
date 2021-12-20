@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ros_Classloader_Test)
+project(bilderpkg)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES ${PROJECT_NAME}  ##ros_Classloader_Test
+  LIBRARIES ${PROJECT_NAME}  ##deprcated:ros_Classloader_Test now bilderpkg
   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs
   DEPENDS system_lib
 )
@@ -26,9 +26,9 @@ include_directories(
 add_library(${PROJECT_NAME} SHARED
     src/Jpeg.cpp
     src/Png.cpp
-    include/ros_Classloader_Test/Bild.h
-    include/ros_Classloader_Test/Jpeg.h
-    include/ros_Classloader_Test/Png.h
+    include/bilderpkg/Bild.h
+    include/bilderpkg/Jpeg.h
+    include/bilderpkg/Png.h
     )
 
 ##mark the include-directory, where the header files are placed
