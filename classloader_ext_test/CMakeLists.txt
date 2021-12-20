@@ -12,7 +12,7 @@ find_package(   catkin REQUIRED COMPONENTS
     )
 
 catkin_package(
-    INCLUDE_DIRS include
+    ##INCLUDE_DIRS include
     LIBRARIES classloader_ext_test
     ##create dependency to the package
     CATKIN_DEPENDS std_msgs roscpp message_runtime bilderpkg
