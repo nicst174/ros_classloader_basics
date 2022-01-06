@@ -2,7 +2,7 @@
 ## Explanation
 CMake:
 - First you need to find the class_loader and the new created package you want to load dynamically.
-- Then add the depandancy to catkin_package.
+- Then add the dependancy to catkin_package.
 
 Source files:
 
