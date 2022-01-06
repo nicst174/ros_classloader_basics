@@ -15,5 +15,5 @@ rosrun classloader_ext_test classloader_ext_test_sendBild
 ```
 rosrun classloader_ext_test classloader_ext_test_printBild
 ```
-## Explenation 
+## Explanation 
 Both packages have their own README file and code-commentary, where everything is explained.
